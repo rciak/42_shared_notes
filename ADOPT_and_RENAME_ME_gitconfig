@@ -1,0 +1,25 @@
+[diff]
+    tool = meld_flatpak
+
+
+[difftool "meld_flatpak"]
+    cmd = flatpak run --file-forwarding org.gnome.meld \"@@\" $LOCAL \"@@\" \"@@\" $REMOTE \"@@\"
+
+
+[difftool]
+    prompt = false
+
+
+[merge]
+  tool = meld_flatpak
+
+[mergetool "meld_flatpak"]
+  cmd = flatpak run --file-forwarding org.gnome.meld \"@@\" $LOCAL \"@@\" \"@@\" $BASE \"@@\" \"@@\" $REMOTE \"@@\" --output \"@@\" $MERGED \"@@\"
+
+[mergetool]
+  prompt = true
+  keepBackup = false
+  writeToTemp = true
+[user]
+	name = Example User
+	email = CodingHero42@web.de
