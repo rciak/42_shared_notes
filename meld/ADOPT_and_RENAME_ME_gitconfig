@@ -20,6 +20,11 @@
   prompt = true
   keepBackup = false
   writeToTemp = true
-[user]
-	name = Example User
-	email = CodingHero42@web.de
+
+#
+#  IF you would like to change the name and the emailaddress that appear
+#  in your git commits: UNCOMMENT and EDIT the following lines 
+#
+#[user]
+#	name = Example User
+#	email = CodingHero42@web.de
